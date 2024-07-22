@@ -73,3 +73,22 @@ button.classList.add("siyah"); // ===> class ekler.
 button.classList.remove("siyah"); // ===>> class çıkarır.
 button.classList.toggle("siyah"); //==>> varsa çıkarır yoksa ekler.
 button.classList.contains("siyah"); //===> class içinde varsa true döner yoksa false döner.
+
+function enableDark() {
+  const button1 = document.querySelector("button");
+  button1.textContent = "Karanlık Tema";
+  document.querySelector("body").classList.add("dark-theme");
+}
+setTimeout(() => {
+  enableDark(); //====> fonsiyon çalıştıktan 4 saniye sonra çalıştır.
+}, 4000);
+
+function karanlikTemayiAcKapa() {
+  if (document.querySelector("body").classList.contains("dark")) {
+    document.querySelector("body").classList.remove("dark");
+    document.getElementById("acKapa").textContent = "Karanlık temayı aç"; //====> Toggle işlemini fonksiyon olarak yazdık.
+  } else {
+    document.querySelector("body").classList.add("dark");
+    document.getElementById("acKapa").textContent = "Karanlık temayı kapat";
+  }
+}
