@@ -35,17 +35,21 @@ Tagler HTML dosyasında bulundukları konuma göre yabş sahip oldukları parent
 // HTML içine yazacaksak Özellikle sayfasının altında body taginin kapanışından hemen önce yazılmalı. (ÖRNEĞİ HMTL DOSYASINDA !!)
 // Bunun sebebi sayfanın açılış performansının yüksek olması için yapılır.!!!
 
-document; //merkezimiz
-document.title; // sayfanın o anki başlığını görürürüz
-document.title = "elma"; // sayfanın başlığını değişitiririz.
+//document; //merkezimiz
+//document.title; // sayfanın o anki başlığını görürürüz
+//document.title = "elma"; // sayfanın başlığını değişitiririz.
 //!!!!!! sayfa yenilenirse değişiklikler başa döner! Kaydetmemiz gerekli !!
 
 // js OBJELERİ İÇİNDE DOT OPERATÖRÜ KULLANMAK VERİMSİZ , ÇOK İÇ İÇE ELEMAN OLABNİLİR.
-document.body.ariaValueMin.section.article.div.div; //   VERİMSİZ YANLIŞ XXXXXXXXX
+//document.body.ariaValueMin.section.article.div.div; //   VERİMSİZ YANLIŞ XXXXXXXXX
 
 // Elemanları ödelliklerine göre deçmeliyiz.
 
-const Button = document.getElementById("acKapa"); // elemanın id sinden yakaladığmız methot
-document.getElementsByClassName("acKapa"); // Class name ine göre yakalar
-document.getElementsByName("acKapa"); // adına göre yakalar.
-document.getElementsByTagName(p); // tag name ine göre yakalar
+//const Button = document.getElementById("acKapa"); // elemanın id sinden yakaladığmız methot
+//document.getElementsByClassName("acKapa"); // Class name ine göre yakalar
+//document.getElementsByName("acKapa"); // adına göre yakalar.
+//document.getElementsByTagName(p); // tag name ine göre yakalar
+
+document.getElementById("acKapa").textContent = "Çetinkaya"; // acKapa id sine ait tagin textini değiştirmek için kullanılır.
+
+// document.querySelector("body").style.backgroundColor = "orange";    ===>>>> CSS değiştirmek için önce style . yazılır !!!!!!
