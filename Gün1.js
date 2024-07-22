@@ -29,3 +29,8 @@ Dom ağacının kökünde document objesi bukunurç
 Bu objeler DOM ağacındaki yerlerine node , yani düğüm denir.
 Tagler HTML dosyasında bulundukları konuma göre yabş sahip oldukları parent child ilişkilerine göre DOM ağacına yerleştirilir.
 */
+
+// JS nereye yazılır ?
+//Ayrı bir dosyada ise !! <script src="dosyaYolu/dosyaAdi.js"></script>  veya !!html dosyasının içine <script> </script>
+// HTML içine yazacaksak Özellikle sayfasının altında body taginin kapanışından hemen önce yazılmalı. (ÖRNEĞİ HMTL DOSYASINDA !!)
+// Bunun sebebi sayfanın açılış performansının yüksek olması için yapılır.!!!
