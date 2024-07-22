@@ -45,11 +45,14 @@ Tagler HTML dosyasında bulundukları konuma göre yabş sahip oldukları parent
 
 // Elemanları ödelliklerine göre deçmeliyiz.
 
-//const Button = document.getElementById("acKapa"); // elemanın id sinden yakaladığmız methot
+//const Button = document.getElementById("acKapa"); // elemanın id sinden yakaladığmız metot
 //document.getElementsByClassName("acKapa"); // Class name ine göre yakalar
 //document.getElementsByName("acKapa"); // adına göre yakalar.
 //document.getElementsByTagName(p); // tag name ine göre yakalar
 
 document.getElementById("acKapa").textContent = "Çetinkaya"; // acKapa id sine ait tagin textini değiştirmek için kullanılır.
 
-// document.querySelector("body").style.backgroundColor = "orange";    ===>>>> CSS değiştirmek için önce style . yazılır !!!!!!
+document.querySelector("body").style.backgroundColor = "orange"; //  ===>>>> CSS değiştirmek için önce style.yazılır!!!!!!
+
+document.querySelectorAll(".photos img"); // ===>>> parantez içindeki selectorle eşleşen her elemanı seçer . BİR ARRAY DÖNER.
+document.querySelector("body"); // ===> parantez içindeki selectorle eşleşen ilk elemanı seçer. TEK BİR DOM OBJESİ DÖNER
