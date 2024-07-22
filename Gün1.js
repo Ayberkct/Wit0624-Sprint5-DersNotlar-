@@ -8,7 +8,7 @@ Temel faydalarını öğrenecez.
 
 /* 
 HTML Statik veri göstermek için bir sunum dilidir. Kendiliğinden DEĞİŞMEZ.
-Documentt Object Model (DOM) Browser HTML dosyasını okuyuğ bir JS  objesi oluşturur.
+Documentt Object Model (DOM) Browser HTML dosyasını okuyup bir JS  objesi oluşturur.
 Sayfadaki değişiklikler bu obje üzerinden yapılır, HTML değiştirmeye gerek kalmaz.
 */
 
@@ -34,3 +34,18 @@ Tagler HTML dosyasında bulundukları konuma göre yabş sahip oldukları parent
 //Ayrı bir dosyada ise !! <script src="dosyaYolu/dosyaAdi.js"></script>  veya !!html dosyasının içine <script> </script>
 // HTML içine yazacaksak Özellikle sayfasının altında body taginin kapanışından hemen önce yazılmalı. (ÖRNEĞİ HMTL DOSYASINDA !!)
 // Bunun sebebi sayfanın açılış performansının yüksek olması için yapılır.!!!
+
+document; //merkezimiz
+document.title; // sayfanın o anki başlığını görürürüz
+document.title = "elma"; // sayfanın başlığını değişitiririz.
+//!!!!!! sayfa yenilenirse değişiklikler başa döner! Kaydetmemiz gerekli !!
+
+// js OBJELERİ İÇİNDE DOT OPERATÖRÜ KULLANMAK VERİMSİZ , ÇOK İÇ İÇE ELEMAN OLABNİLİR.
+document.body.ariaValueMin.section.article.div.div; //   VERİMSİZ YANLIŞ XXXXXXXXX
+
+// Elemanları ödelliklerine göre deçmeliyiz.
+
+const Button = document.getElementById("acKapa"); // elemanın id sinden yakaladığmız methot
+document.getElementsByClassName("acKapa"); // Class name ine göre yakalar
+document.getElementsByName("acKapa"); // adına göre yakalar.
+document.getElementsByTagName(p); // tag name ine göre yakalar
