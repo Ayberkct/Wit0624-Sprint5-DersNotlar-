@@ -42,4 +42,17 @@ yeni.remove(); // ===>>> elemanı silmek için kullanılır.
 <button>
 </form>
 
+
 */
+document.querySelector(".yorumFormu").style.border = "1px solid black";
+
+document.addEventListener("click", (event) => {
+  console.log("tıklama bilgileri", event);
+});
+
+// Varsayılan davranışları her zaman istemeyiz.
+// Bunun için ne yapmalı ??
+
+form.preventDefault();
+
+//addEventListener metodu, bir eventin detaylarını içeren objeyi kendine verilen fonksiyona iletir.
