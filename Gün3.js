@@ -35,3 +35,63 @@ wrapper.appendChild(data);
 
 const commnedWrapper = document.getElementById("yorumlar");
 commnedWrapper.appendChild(wrapper);
+
+// örnek 2 ;
+const movies = [
+  {
+    title: "Star Wars",
+    rating: "16+",
+    duration: "2h 5min",
+    url: "https://youtube.com/jhjhjh",
+  },
+  {
+    title: "Star Wars 2",
+    rating: "16+",
+    duration: "3h 5min",
+    url: "https://youtube.com/jhjhjh",
+  },
+  {
+    title: "Star Wars 3",
+    rating: "16+",
+    duration: "4h 5min",
+    url: "https://youtube.com/jhjhjh",
+  },
+  {
+    title: "Star Wars 4",
+    rating: "16+",
+    duration: "4h 5min",
+    url: "https://youtube.com/jhjhjh",
+  },
+  {
+    title: "Star Wars 5",
+    rating: "16+",
+    duration: "4h 5min",
+    url: "https://youtube.com/jhjhjh",
+  },
+];
+/* div.movie-card h3 div span.rating span.duration button */
+for (let movie of movies) {
+  const card = document.createElement("div");
+  card.classList.add("movie-card");
+  const title = document.createElement("h3");
+  title.textContent = movie.title;
+  card.appendChild(title);
+  const container = document.createElement("div");
+  const rating = document.createElement("span");
+  rating.classList.add("rating");
+  rating.textContent = movie.rating;
+  const duration = document.createElement("span");
+  duration.classList.add("duration");
+  duration.textContent = movie.duration;
+  container.append(rating, duration);
+  card.appendChild(container);
+  const button = document.createElement("button");
+  button.textContent = "Play";
+  button.addEventListener("click", () => {
+    window.redirect(movie.url);
+  });
+  card.appendChild(button);
+  document.querySelector("#root").appendChild(card);
+}
+
+// fonksiyonlara parametre gireresek aynı component dan farklı farklı sonuçlar elde edebiliriz.
