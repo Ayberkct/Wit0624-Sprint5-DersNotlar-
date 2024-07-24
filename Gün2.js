@@ -56,3 +56,5 @@ document.addEventListener("click", (event) => {
 form.preventDefault();
 
 //addEventListener metodu, bir eventin detaylarını içeren objeyi kendine verilen fonksiyona iletir.
+
+// boş verileri göndermemek için disable özelliğini kullanabiliriz.
