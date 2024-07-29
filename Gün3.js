@@ -95,3 +95,18 @@ for (let movie of movies) {
 }
 
 // fonksiyonlara parametre gireresek aynı component dan farklı farklı sonuçlar elde edebiliriz.
+
+//Döngüler
+array.forEach((element) => {
+  console.log(element); //====> return value su yok.
+});
+
+const elements = array.map((element) => console.log(element)); //=======>>>>> sonuçlardan oluşan bir array döner.
+
+const favs = ["Matrix", "Dune", "Persona"];
+
+const items = favs.map(createFavMovie);
+
+items.forEach((movie) => {
+  favList.appendChild(movie);
+});
